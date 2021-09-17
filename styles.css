@@ -1,5 +1,79 @@
+:root { 
+/*bg*/
+--Very-dark-blue: hsl(233, 47%, 7%);
+
+/*card-bg*/
+--Dark-desaturated-blue: hsl(244, 38%, 16%);
+
+/*accent*/
+--Soft-violet: hsl(277, 64%, 61%);
+}
+
+
 html { 
 font-family: 'Inter', sans-serif;
-
+font-weight: 400;
+color: white;
 }
+
+body { 
+    background-color: var(--Very-dark-blue);
+    width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container { 
+    grid-template-rows: 1fr repeat(3, auto);
+    background-color: var(--Dark-desaturated-blue);
+    width: 100vw;
+    max-width: 410px;
+    border-radius: 20px;
+}
+
+.background-image img { 
+    width: 100%;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#insights { 
+    color: var(--Soft-violet);
+}
+
+.header { 
+    text-align: center;
+}
+
+article { 
+    line-height: 30px;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    margin: 10px;
+}
+
+.numbers { 
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.numbers p { 
+    color: hsla(0, 0%, 100%, 0.75);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
 
