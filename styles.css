@@ -85,7 +85,7 @@ article {
 }
 
 .numbers p { 
-    color: hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.6);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 13px;
@@ -112,7 +112,8 @@ article {
     .background-image img { 
         height: 100%;
         border-bottom-right-radius: 20px;
-        border-top-right-radius: 20px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 0px;
     }
 
     .overlay { 
@@ -126,14 +127,23 @@ article {
     }
 
     .content { 
-        justify-content: start;
-        text-align: start;
+        padding: 20px 50px;
     }
 
     .numbers { 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        
+    }
+
+    article { 
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .background-image { 
+        display: grid;
+        align-items: center;
     }
 
 }
